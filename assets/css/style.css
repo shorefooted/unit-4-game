@@ -1,0 +1,38 @@
+body {
+    background: #1A1917;
+    color: white;
+    font-family: 'Gruppo', cursive;
+    padding: 5%;
+}
+
+h1, h2, h3 {
+    font-family: 'Bungee Inline', cursive;
+}
+
+
+button {
+    background: transparent;
+    border: none;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    outline: none;
+}
+/* Psuedo-class for button effects- source: Hover.css  */
+button:active, button:focus {
+    transform: scale(1.1);
+    outline: none;
+}
+
+button:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+/* Set all crystal images dimensions */
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+

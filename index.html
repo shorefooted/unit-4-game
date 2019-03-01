@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- See notes here and in js and css code -->
+<head>
+    <meta charset="UTF-8">
+
+    <title>Gem Game</title>
+
+    <!--Cool Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Gruppo" rel="stylesheet">
+
+    <!-- style sheet: 1st Reset Browser-->
+    <link rel="stylesheet" href="assets/css/reset.css"/>
+
+    <!-- style sheet: 2nd jQuery v3.3.1 recent version -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+    <!--style sheet: mine in assets directory-->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+    <!--Big centered div containing everything on the page-->
+   <section class="container" align="center">
+
+        <!--Block elements for each game stat with inline Element using <span> so that js can inject changing number into ids-->
+       <h1>Target: <span id="target-num"></span></h1>
+       <h3>Gem Guess Total: <span id="total"></span></h3>
+       <h4>Wins: <span id="wins"></span></h4>
+       <h4>Losses: <span id="losses"></span></h4>
+
+        <!--Alert user if won or lost-->
+       <h3 id="alert-message"></h3>
+       <hr/>
+       <!--container for gem buttons-->
+       <div class="btn-wrap">
+           <!--Using form element <button> to submit data-index when pushed for array access-->
+           <button data-index="0"><img src="assets/images/gem1.png"/></button>
+           <button data-index="1"><img src="assets/images/gem2.png"/></button>
+           <button data-index="2"><img src="assets/images/gem3.png"/></button>
+           <button data-index="3"><img src="assets/images/gem4.png"/></button>
+       </div>
+    </section>
+
+<!-- script -->
+<script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>
